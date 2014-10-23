@@ -1,0 +1,18 @@
+{
+  "name": "level-js-factor-bundle",
+  "version": "0.0.0",
+  "description": "demo for level.js#37",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    , "broke": "./node_modules/.bin/browserify index.js 2.js -p [ factor-bundle -o bundle.js -o bundle2.js ] -o common.js && open index.html"
+    , "works": "./node_modules/.bin/browserify index.js -o bundle.js && open index.html"
+  },
+  "author": "Joey Baker <joey@byjoeybaker.com> (https://byjoeybaker.com/)",
+  "license": "Artistic-2.0",
+  "dependencies": {
+    "browserify": "^6.1.0",
+    "factor-bundle": "^2.3.0",
+    "level-js": "^2.1.6"
+  }
+}
